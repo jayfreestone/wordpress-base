@@ -44,7 +44,7 @@ RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 
 # Customize PHP setup
 COPY config/php/conf.d/ /usr/local/etc/php/conf.d/
-COPY config/php/php-fpm.d/ /usr/local/etc/php-fpm.d/
+COPY config/php/php-fpm.d/ /etc/php-fpm.d/
 
 COPY config/docker-entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
