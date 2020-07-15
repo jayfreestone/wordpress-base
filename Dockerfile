@@ -34,7 +34,7 @@ COPY config/.inputrc /root
 COPY config/.bashrc /root
 
 # Configure supervisord
-COPY config/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+COPY config/supervisord.conf /etc/supervisord.conf
 
 # Configure nginx
 COPY config/nginx/ /etc/nginx/

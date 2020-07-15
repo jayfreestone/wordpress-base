@@ -6,4 +6,4 @@ if [ "production" == "$APP_ENV" ]; then
 fi
 
 # Start supervisor
-/usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf
+/usr/bin/supervisord
